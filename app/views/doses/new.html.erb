@@ -1,0 +1,9 @@
+<% x = "<form action=\"/cocktails/#{@cocktail.id}/doses\" accept-charset=\"UTF-8\" method=\"post\">" %>
+<%= x.html_safe %>
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden"/>
+  <label>Ingredient Id</label>
+  <input type="text" name="ingredient_id"/>
+  <label>Description</label>
+  <input type="text" name="description"/>
+  <input type="submit" value="Create Dose"/>
+</form>

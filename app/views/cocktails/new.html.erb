@@ -1,0 +1,6 @@
+<form action="/cocktails" accept-charset="UTF-8" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <label for="article_title">Name</label>
+  <input type="text" name="cocktail[name]"/>
+  <input type="submit" value="Create Cocktail"/>
+</form>
